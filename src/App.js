@@ -2,6 +2,7 @@ import './App.css';
 import Dictionary from "./components/Dictionary";
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import AllWords from "./components/AllWords/AllWords";
+import Cards from "./components/ShowCards/Cards";
 import React from "react";
 
 function App(props) {
@@ -16,6 +17,10 @@ function App(props) {
                 <Route
                     path='/all-words'
                     element={<AllWords allWords={props.allWords} />}
+                />
+                <Route
+                    path='/cards'
+                    element={<Cards allWords={props.allWords} />}
                 />
                 <Route
                     path="/*"

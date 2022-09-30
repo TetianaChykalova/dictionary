@@ -4,9 +4,8 @@
     justify-content: center;
     align-items: center;
     padding: 30px;
-    max-width: 550px;
-    margin: 200px auto 0;
-    border: 3px solid #013464;
+    max-width: 750px;
+    margin: 30px auto 0;
 }
 .main {
     display: flex;
@@ -14,6 +13,13 @@
     justify-content: center;
     align-items: center;
     margin: 0 0 20px 0;
+}
+.main h1 {
+    text-transform: uppercase;
+    color: #013464;
+    line-height: 120%;
+    text-decoration: #013464 underline;
+    margin: 0 0 70px 0;
 }
 .input {
     display: flex;
@@ -24,15 +30,32 @@
 .input input {
     margin: 0 10px;
     height: 30px;
-    width: 200px;
+    width: 250px;
+    border-radius: 3px;
+    padding: 5px;
+}
+.addBtn {
+    margin: 0 0 50px 0;
+}
+.addBtn button {
+    padding: 10px 25px;
+    background: #013464;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 .button a {
-    padding: 5px;
+    text-decoration: none;
+    padding: 10px 25px;
     background: #fff;
-    border: 1px solid #013464;
+    border: 3px solid #013464;
     border-radius: 5px;
     color: #000;
-}
-.button a:nth-child(2) {
-    margin: 0 20px;
 }

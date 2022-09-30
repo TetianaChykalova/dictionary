@@ -11,6 +11,8 @@ const DictionaryLogic = (props) => {
         word = word.current.value;
         translate = translate.current.value;
         props.addWord(word, translate);
+        word.current.value = '';
+        translate.current.value = '';
     }
 
     return (
@@ -22,10 +24,9 @@ const DictionaryLogic = (props) => {
 
                 <div className={s.input}>
                     <input type="text" placeholder="enter the word" ref={word}/>
-                    <p> - </p>
                     <input type="text" placeholder="enter the translate" ref={translate}/>
                 </div>
-                <div>
+                <div className={s.addBtn}>
                     <button onClick={addWordFunc}>
                         Add
                     </button>
@@ -37,9 +38,9 @@ const DictionaryLogic = (props) => {
                     All words
                 </NavLink>
 
-                {/*<a href='#' id="show-cards">*/}
-                {/*    Show cards*/}
-                {/*</a>*/}
+                <NavLink to='/cards' id="show-cards">
+                    Show cards
+                </NavLink>
 
                 {/*<a href='#' id="repeat">*/}
                 {/*    Repeat words*/}

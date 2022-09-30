@@ -29,20 +29,8 @@
 .firstMes img {
     margin: 30px 0 0 0;
 }
-.wordsList {
-    border: #013464 3px solid;
-    padding: 20px;
-    background: #fff;
-}
-.wordsList div {
-    border-bottom: #013464 1px solid;
-    font-size: 1rem;
-    transition: all 0.3s ease-in 0s;
-}
-.wordsList div:last-child {
-    border-bottom: none;
-}
-.wordsList div:hover {
-    transition: all 0.3s ease-in 0s;
-    font-size: 1.3rem;
+.cardsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
