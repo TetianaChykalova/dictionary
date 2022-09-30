@@ -1,0 +1,52 @@
+import React from "react";
+import s from "./DictionaryLogic.module.css";
+import {NavLink} from "react-router-dom";
+
+const DictionaryLogic = (props) => {
+
+    let word = React.createRef();
+    let translate = React.createRef();
+
+    let addWordFunc = () => {
+        word = word.current.value;
+        translate = translate.current.value;
+        props.addWord(word, translate);
+    }
+
+    return (
+        <div className={s.wrapper}>
+            <div className={s.main}>
+                <h1>
+                    Dictionary
+                </h1>
+
+                <div className={s.input}>
+                    <input type="text" placeholder="enter the word" ref={word}/>
+                    <p> - </p>
+                    <input type="text" placeholder="enter the translate" ref={translate}/>
+                </div>
+                <div>
+                    <button onClick={addWordFunc}>
+                        Add
+                    </button>
+                </div>
+            </div>
+
+            <div className={s.button}>
+                <NavLink to='/all-words' id="all-words">
+                    All words
+                </NavLink>
+
+                {/*<a href='#' id="show-cards">*/}
+                {/*    Show cards*/}
+                {/*</a>*/}
+
+                {/*<a href='#' id="repeat">*/}
+                {/*    Repeat words*/}
+                {/*</a>*/}
+            </div>
+        </div>
+    )
+}
+
+export default DictionaryLogic;

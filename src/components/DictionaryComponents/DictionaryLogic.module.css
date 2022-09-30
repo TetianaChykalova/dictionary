@@ -1,0 +1,38 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    max-width: 550px;
+    margin: 200px auto 0;
+    border: 3px solid #013464;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+.input input {
+    margin: 0 10px;
+    height: 30px;
+    width: 200px;
+}
+.button a {
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #013464;
+    border-radius: 5px;
+    color: #000;
+}
+.button a:nth-child(2) {
+    margin: 0 20px;
+}
