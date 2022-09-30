@@ -11,8 +11,6 @@ const DictionaryLogic = (props) => {
         word = word.current.value;
         translate = translate.current.value;
         props.addWord(word, translate);
-        word.current.value = '';
-        translate.current.value = '';
     }
 
     return (

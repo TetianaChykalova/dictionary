@@ -28,7 +28,7 @@ function App(props) {
                 />
             </Routes>
         </BrowserRouter>
-  );
+    );
 }
 
 export default App;

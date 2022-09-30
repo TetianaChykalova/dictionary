@@ -7,11 +7,10 @@ import {addWord} from "./state";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App
-        allWords={allWords}
-        addWord={addWord}
-    />
-  </React.StrictMode>
+    <React.StrictMode>
+        <App
+            allWords={allWords}
+            addWord={addWord}
+        />
+    </React.StrictMode>
 );
-
